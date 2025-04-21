@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEVA TIME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <!-- Корзина -->
+                <div class="first">
+                    <div class="basket"><img src="./img/korvinaverx.svg" alt="Корзина"></div>
+                    <div class="bukvi">
+                        <div class="regular">
+                            <span>Корзина (5):</span>
+                        </div>
+                        <div class="bold">
+                            <span>43 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Центральный логотип -->
+                <div class="two">
+                    <div class="big">
+                        <span>NEVA TIME</span>
+                    </div>
+                    <div class="small">
+                        <span>Фирменные аксессуары Michael Kors с доставкой по всей России</span>
+                    </div>
+                </div>
+                <!-- Телефон -->
+                <div class="three">
+                    <div class="phone">
+                        <span>8 (800) 302 79 15</span>
+                    </div>
+                    <div class="box-1">
+                        <div class="btn btn-one">
+                            <span>Заказать обратный звонок</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Основная навигация -->
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li><a href="#">ГЛАВНАЯ</a></li>
+                    <li><a href="#">ЧАСЫ</a></li>
+                    <li><a href="#">СУМКИ</a></li>
+                    <li><a href="#">РЮКЗАКИ</a></li>
+                    <li><a href="#">КОШЕЛЬКИ</a></li>
+                    <li><a href="#">БРАСЛЕТЫ</a></li>
+                    <li><a href="#">ГАРАНТИЯ</a></li>
+                    <li><a href="#">ДОСТАВКА</a></li>
+                    <li><a href="#">ОТЗЫВЫ</a></li>
+                    <li><a href="#">ДЛЯ ПОКУПАТЕЛЕЙ</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Кнопка мобильного меню -->
+        <button class="mobile-menu-btn">☰</button>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <a href="#">ГЛАВНАЯ</a>
+        <a href="#">ЧАСЫ</a>
+        <a href="#">СУМКИ</a>
+        <a href="#">РЮКЗАКИ</a>
+        <a href="#">КОШЕЛЬКИ</a>
+        <a href="#">БРАСЛЕТЫ</a>
+        <a href="#">ГАРАНТИЯ</a>
+        <a href="#">ДОСТАВКА</a>
+        <a href="#">ОТЗЫВЫ</a>
+        <a href="#">ДЛЯ ПОКУПАТЕЛЕЙ</a>
+    </div>
+
+    <main id="main">
+        <div class="women">
+            <div class="w">
+                <div class="banner">
+                    <h2>Часы Michael Kors</h2>
+                    <div class="button-group">
+                        <button class="her">Для нее</button>
+                        <button class="him">Для него</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            menuBtn.addEventListener('click', function() {
+                const isOpen = mobileMenu.style.display === 'flex';
+                mobileMenu.style.display = isOpen ? 'none' : 'flex';
+                menuBtn.textContent = isOpen ? '☰' : '✕';
+            });
+            
+            // Закрытие меню при клике вне его области
+            document.addEventListener('click', function(e) {
+                if (!mobileMenu.contains(e.target) && e.target !== menuBtn) {
+                    mobileMenu.style.display = 'none';
+                    menuBtn.textContent = '☰';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

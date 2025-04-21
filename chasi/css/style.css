@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'SH';
+    src: url(../bodonic.woff);
+}
+@font-face {
+    font-family: 'BA';
+    src: url(../gilroy-bold.woff);
+}
+
+:root {
+    --primary_color: #CDB494;
+    --bg_color: #F7F7F7;
+    --header_height: 90px;
+    --nav_height: 66px;
+}
+
+/* Базовые стили */
+body {
+    background-color: var(--bg_color);
+    margin: 0;
+    padding-top: calc(var(--header_height) + var(--nav_height));
+    font-family: 'SH', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'BA', sans-serif;
+    margin: 0;
+}
+
+/* Шапка сайта */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.header-top {
+    height: var(--header_height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px);
+    border-bottom: 1px solid rgba(177, 177, 177, 0.5);
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, .6);
+}
+
+/* Корзина */
+.first {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.basket {
+    width: 32px;
+    height: 32px;
+}
+
+.bukvi {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.bold {
+    font-family: 'BA';
+    font-weight: bold;
+}
+
+/* Центральный логотип */
+.two {
+    text-align: center;
+    width: 262px;
+}
+
+.big {
+    font-size: 40px;
+    font-family: 'SH';
+}
+
+.small {
+    font-size: 14px;
+    font-family: 'SH';
+}
+
+/* Телефон */
+.three {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.phone {
+    font-size: 18px;
+    font-family: "BA";
+}
+
+.btn-one {
+    color: var(--primary_color);
+    background: none;
+    border: none;
+    font-family: 'SH';
+    cursor: pointer;
+    padding: 5px 0;
+    position: relative;
+}
+
+/* Навигация */
+.navigation {
+    height: var(--nav_height);
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, .6);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'SH';
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #b66700;
+}
+
+/* Основной баннер */
+.women {
+    width: 100%;
+    position: relative;
+}
+
+.w {
+    height: 80vh;
+    min-height: 500px;
+    max-height: 900px;
+    background-image: url(../img/latinavchasax.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    left: 15%;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.banner h2 {
+    font-family: 'BA';
+    font-weight: 100;
+    font-size: clamp(36px, 5vw, 72px);
+    line-height: 1.2;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+.her, .him {
+    padding: 15px 30px;
+    font-family: 'BA';
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(223, 223, 223, 0.151);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+
+.her:hover, .him:hover {
+    background-color: #ffffff85;
+    transform: translateY(-2px);
+}
+
+/* Мобильное меню */
+.mobile-menu-btn {
+    display: none;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--primary_color);
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: var(--header_height);
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 37px;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.mobile-menu a {
+    color: var(--primary_color);
+    text-decoration: none;
+    font-family: 'SH';
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Адаптация для планшетов и мобильных */
+@media (max-width: 992px) {
+    .navigation {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    body {
+        padding-top: var(--header_height);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header_height: 70px;
+    }
+    
+    .header-top {
+        padding: 0 20px;
+    }
+    
+    .big {
+        font-size: 28px;
+    }
+    
+    .small {
+        display: none;
+    }
+    
+    .bold {
+        display: none;
+    }
+    
+    .phone {
+        font-size: 14px;
+    }
+    
+    .banner {
+        left: 5%;
+        text-align: center;
+        width: -webkit-fill-available;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        width: 93%;
+    }
+}
+
+@media (max-width: 480px) {
+    .phone, .btn-one {
+        display: none;
+    }
+    
+    .big {
+        font-size: 22px;
+    }
+    
+    .banner {
+        left: 0;
+        padding: 0 15px;
+    }
+}
