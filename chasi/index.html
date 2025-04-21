@@ -12,7 +12,7 @@
             <div class="header-top">
                 <!-- Корзина -->
                 <div class="first">
-                    <div class="basket"><img src="./img/korvinaverx.svg" alt="Корзина"></div>
+                    <div class="basket"><img src="./img/korvinaverx.svg" alt="Корзина" class="iimmgg"></div>
                     <div class="bukvi">
                         <div class="regular">
                             <span>Корзина (5):</span>
@@ -48,15 +48,15 @@
             <nav class="navigation">
                 <ul class="nav-list">
                     <li><a href="#">ГЛАВНАЯ</a></li>
-                    <li><a href="#">ЧАСЫ</a></li>
-                    <li><a href="#">СУМКИ</a></li>
-                    <li><a href="#">РЮКЗАКИ</a></li>
-                    <li><a href="#">КОШЕЛЬКИ</a></li>
-                    <li><a href="#">БРАСЛЕТЫ</a></li>
-                    <li><a href="#">ГАРАНТИЯ</a></li>
-                    <li><a href="#">ДОСТАВКА</a></li>
-                    <li><a href="#">ОТЗЫВЫ</a></li>
-                    <li><a href="#">ДЛЯ ПОКУПАТЕЛЕЙ</a></li>
+                    <li><a href="./ocklock.html">ЧАСЫ</a></li>
+                    <li><a href="#uu">СУМКИ</a></li>
+                    <li><a href="#uu">РЮКЗАКИ</a></li>
+                    <li><a href="#uu">КОШЕЛЬКИ</a></li>
+                    <li><a href="#uu">БРАСЛЕТЫ</a></li>
+                    <li><a href="#uu">ГАРАНТИЯ</a></li>
+                    <li><a href="#uu">ДОСТАВКА</a></li>
+                    <li><a href="#uu">ОТЗЫВЫ</a></li>
+                    <li><a href="#why">ДЛЯ ПОКУПАТЕЛЕЙ</a></li>
                 </ul>
             </nav>
         </div>
@@ -83,7 +83,7 @@
         <div class="women">
             <div class="w">
                 <div class="banner">
-                    <h2>Часы Michael Kors</h2>
+                    <h2>Часы<br> Michael Kors</h2>
                     <div class="button-group">
                         <button class="her">Для нее</button>
                         <button class="him">Для него</button>
@@ -92,6 +92,181 @@
             </div>
         </div>
     </main>
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEVA TIME - Коллекции</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        /* Стили для чередующихся блоков */
+        .alternating-block {
+            display: flex;
+            align-items: center;
+            margin-bottom: 80px;
+            gap: 40px;
+        }
+        
+        .image-side {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .image-side img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .text-side {
+            flex: 1;
+            min-width: 0;
+            padding: 20px;
+        }
+        
+        .text-side h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+        
+        .text-side p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .section-btn {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #000;
+            background-color: rgba(223, 223, 223, 0.2);
+            border: 1px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .section-btn:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        /* Четные блоки (картинка справа) */
+        .alternating-block:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        /* Адаптация для планшетов */
+        @media (max-width: 992px) {
+            .alternating-block {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .alternating-block:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .image-side,
+            .text-side {
+                width: 100%;
+            }
+            
+            .text-side {
+                padding: 0;
+            }
+        }
+        
+        /* Адаптация для мобильных */
+        @media (max-width: 768px) {
+            .content-section {
+                padding: 40px 15px;
+            }
+            
+            .alternating-block {
+                margin-bottom: 60px;
+            }
+            
+            .text-side h2 {
+                font-size: 24px;
+            }
+            
+            .text-side p {
+                font-size: 16px;
+            }
+            
+            .section-btn {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="content-section">
+        <!-- 1. Картинка слева, текст справа -->
+        <div class="alternating-block" id="uu">
+            <div class="image-side">
+                <img src="img/latinassumkoi.jpg" alt="Коллекция часов 1">
+            </div>
+            <div class="text-side">
+                <h2>Браслеты Michael Kors"</h2>
+                <button class="section-btn">СМОТРЕТЬ ВСЕ</button>
+            </div>
+        </div>
+        
+        <!-- 2. Картинка справа, текст слева -->
+        <div class="alternating-block">
+            <div class="image-side">
+                <img src="img/paralatin.jpg" alt="Коллекция часов 2">
+            </div>
+            <div class="text-side">
+                <h2>Сумки Michael Kors</h2>
+                <button class="section-btn">СМОТРЕТЬ ВСЕ</button>
+            </div>
+        </div>
+        
+        <!-- 3. Картинка слева, текст справа -->
+        <div class="alternating-block">
+            <div class="image-side">
+                <img src="img/rukzak.jpg" alt="Коллекция часов 3">
+            </div>
+            <div class="text-side">
+                <h2>Рюкзаки Michael Kors</h2>
+                <button class="section-btn">СМОТРЕТЬ ВСЕ</button>
+            </div>
+        </div>
+        
+        <!-- 4. Картинка справа, текст слева -->
+        <div class="alternating-block">
+            <div class="image-side">
+                <img src="img/koshelek.jpg" alt="Коллекция часов 4">
+            </div>
+            <div class="text-side">
+                <h2>Кошельки Michael Kors</h2>
+                <button class="section-btn">СМОТРЕТЬ ВСЕ</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -113,5 +288,152 @@
             });
         });
     </script>
+<section class="reasons-section">
+    <div class="reasons-container">
+        <div class="reasons-title-container">
+            <h1 class="reasons-title" id="why">5 причин купить аксессуары Michael Kors у нас</h1>
+        </div>
+        
+        <div class="reasons-grid">
+            <!-- Первые 3 карточки вверху -->
+            <div class="reasons-grid-flex">
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <img src="img/logogalochka.svg" alt="Michael Kors" width="40">
+                    </div>
+                    <h2>Официальный сайт, интернет магазин Michael Kors</h2>
+                    <p>Остерегайтесь контрабанных товаров Мэйли Корс. На них не распространяется официальная гарантия производителя.</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <img src="img/logomoneybirka.svg" alt="Michael Kors" width="40">
+                    </div>
+                    <h2>Лучшая цена на аксессуары Michael Kors</h2>
+                    <p>Купите часы, сумки, рюкзаки, кампании, ключи. Майка Корс оригинала по лучшей цене. Сравните и убедитесь сами, что лучше предложения на найти!</p>
+                </div>
+                
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <img src="img/logoshit.svg" alt="Michael Kors" width="40">
+                    </div>
+                    <h2>Официальная гарантия на все аксессуары Michael Kors</h2>
+                    <p>Приобретая мужские и женские аксессуары Мэйли Корс у нас. Вам предоставляется официальный гарантийный талон.</p>
+                </div>
+             </div>
+             <div class="reasons-grid-flex">
+                <div class="reason-card bottom-left">
+                    <div class="reason-icon">
+                        <img src="img/logocar.svg" alt="Michael Kors" width="40">
+                    </div>
+                    <h2>Бесплатная и быстрая доставка по всей России</h2>
+                    <p>В среднем доставке по России от 2-х до 5-ти дней. По Москве и Совете Петербург у доставки осуществляется на следующий день после заказа.</p>
+                </div>
+                
+                <div class="reason-card bottom-right">
+                    <div class="reason-icon">
+                        <img src="img/logodoki.svg" alt="Michael Kors" width="40">
+                    </div>
+                    <h2>Официальный каталог Michael Kors в России</h2>
+                    <p>В нашем официальном каталоге огромный выбор оригинальных часов, сумок, рюкзаков, кампаний, ключей. Майка Корс по лучшей цене.</p>
+                </div>
+             </div>
+            
+            
+            <!-- Последние 2 карточки внизу по краям -->
+            
+        </div>
+    </div>
+</section>
+<section class="contact-form-section">
+    <div class="contact-form-container">
+        <h2 class="contact-form-title">Остались вопросы?</h2>
+        <p class="contact-form-subtitle">Заполните форму и мы свяжемся с Вами</p>
+        
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <textarea id="comment" name="comment" placeholder="Комментарий" rows="3"></textarea>
+            </div>
+            <div class="form-submit">
+                <button type="submit" class="submit-btn">ОТПРАВИТЬ</button>
+            </div>
+        </form>
+    </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- Левая колонка - Логотип и подписка -->
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <div class="footer-big">NEVA TIME</div>
+                    <div class="footer-small">Фирменные аксессуары Michael Kors с доставкой по всей России</div>
+                </div>
+                
+                <div class="footer-subscribe">
+                    <h3 class="footer-subscribe-title">Подпишись на новинки и скидки</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="E-mail">
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Центральная колонка - Навигация -->
+            <div class="footer-center">
+                <nav class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h4>Женские часы</h4>
+                        <ul>
+                            <li><a href="#">Мужские часы</a></li>
+                            <li><a href="#">Сумки</a></li>
+                            <li><a href="#">Рюкзаки</a></li>
+                            <li><a href="#">Кошельки</a></li>
+                            <li><a href="#">Браслеты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h4>Биология</h4>
+                        <ul>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Другие бренды</a></li>
+                            <li><a href="#">Корпоративные подарки</a></li>
+                            <li><a href="#">О компании</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <!-- Правая колонка - Контакты и логотипы -->
+            <div class="footer-right">
+                <div class="footer-contacts">
+                    <div class="footer-phone">8 (800) 302 79 15</div>
+                    <button class="btn btn-one">Заказать обратный звонок</button>
+                </div>
+                
+                <div class="footer-logos">
+                    <img src="img/logoyoutube.svg" alt="Логотип 1" class="footer-logo-img">
+                    <img src="img/logovk.svg" alt="Логотип 2" class="footer-logo-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2023 NEVA TIME. Все права защищены
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
