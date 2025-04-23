@@ -43,6 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Обработка кликов по кнопкам "В корзину"
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
